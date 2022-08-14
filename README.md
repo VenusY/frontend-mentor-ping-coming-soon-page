@@ -1,5 +1,5 @@
 # frontend-mentor-ping-coming-soon-page
-Thank you for checking out my solution!
+Thank you for checking out my solution! Feel free to leave feedback if you have any.
 
 ## The challenge
 
