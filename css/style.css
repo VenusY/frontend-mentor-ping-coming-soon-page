@@ -162,7 +162,7 @@ main {
   height: 1rem;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 800px) {
   .heading {
     font-size: 3rem;
   }
