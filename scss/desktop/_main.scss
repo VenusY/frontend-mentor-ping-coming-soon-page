@@ -1,0 +1,91 @@
+@use "../util/functions" as f;
+
+@media screen and (min-width: 1440px) {
+  // Typography
+
+  .heading {
+    font-size: f.rem(48);
+  }
+
+  .call-to-action {
+    font-size: f.rem(20);
+  }
+
+  .form {
+    &__email-input-field {
+      font-size: f.rem(16);
+      font-weight: 300;
+    }
+
+    &__error-message {
+      font-size: f.rem(12);
+      font-weight: 300;
+      text-align: start;
+    }
+
+    &__submit-button {
+      font-size: f.rem(15);
+    }
+  }
+
+  .copyright-statement {
+    font-size: f.rem(12);
+  }
+
+  // Layout
+
+  main {
+    max-width: none;
+    padding: f.rem(85) 0 f.rem(48) 0;
+  }
+
+  .logo {
+    height: f.rem(26);
+    margin-bottom: f.rem(42);
+  }
+
+  .heading {
+    margin-bottom: f.rem(6);
+  }
+
+  .call-to-action {
+    margin-bottom: f.rem(38);
+  }
+
+  .form {
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 640px;
+    margin-bottom: f.rem(86);
+
+    &__container {
+      width: 100%;
+      margin: 0 15px 0 0;
+    }
+
+    &__email-input-field {
+      width: 100%;
+      height: f.rem(56);
+    }
+
+    &__error-message {
+      margin: f.rem(8) 30px 0 30px;
+    }
+
+    &__submit-button {
+      width: auto;
+      min-width: 200px;
+      height: f.rem(56);
+    }
+  }
+
+  .hero-image {
+    max-width: 640px;
+    margin-bottom: f.rem(72);
+  }
+
+  .socials-block {
+    margin-bottom: f.rem(25);
+  }
+}

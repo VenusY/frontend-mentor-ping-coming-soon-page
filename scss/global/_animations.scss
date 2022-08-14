@@ -1,0 +1,9 @@
+.socials-block {
+  &__link {
+    transition: border 0.15s, background 0.15s;
+  }
+
+  &__icon {
+    transition: fill 0.15s;
+  }
+}
