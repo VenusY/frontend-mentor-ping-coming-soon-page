@@ -1,10 +1,11 @@
 const emailForm = document.querySelector("#form");
-const inputField = document.querySelector("#form__email-input-field");
-const errorMessage = document.querySelector("#form__error-message");
-const validFormat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
 function validateForm(e) {
     e.preventDefault();
+    
+    const inputField = document.querySelector("#form__email-input-field");
+    const errorMessage = document.querySelector("#form__error-message");
+    const validFormat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
     if (!inputField.value || !inputField.value.match(validFormat)) {
         inputField.classList.add("form__email-input-field--invalid");
