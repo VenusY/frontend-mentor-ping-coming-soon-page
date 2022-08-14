@@ -26,35 +26,42 @@
   </head>
   <body>
     <main>
-      <img src="images/logo.svg" alt="Ping logo" id="logo" />
+      <img src="images/logo.svg" alt="Ping logo" class="logo" />
 
-      <h1 id="heading">
-        We are launching <span id="heading__text--bold">soon</span>!
+      <h1 class="heading">
+        We are launching <span class="heading__text--bold">soon!</span>
       </h1>
-      <p id="call-to-action">Subscribe and get notified</p>
+      <p class="call-to-action">Subscribe and get notified</p>
 
-      <form id="form">
-        <div id="form__container">
+      <form novalidate class="form" id="form">
+        <div class="form__container">
           <input
             type="email"
-            class="form__email-input-field form__email-input-field--invalid"
+            placeholder="Your email address..."
+            autocomplete="email"
+            class="form__email-input-field"
+            id="form__email-input-field"
           />
-          <button id="form__submit-button">Notify Me</button>
+          <p
+            class="form__error-message form__error-message--hidden"
+            id="form__error-message"
+          >
+            Please provide a valid email address
+          </p>
         </div>
-        <p id="form__error-message">Please provide a valid email address</p>
+        <button class="form__submit-button">Notify Me</button>
       </form>
 
       <img
         src="images/illustration-dashboard.png"
         alt="Dashboard image"
-        id="hero-image"
+        class="hero-image"
       />
 
       <div class="socials-block">
-        <a href="#" class="socials-block__icon-container">
+        <a href="#" class="socials-block__link">
           <svg
-            class="socials-block__icon"
-            id="socials-block__facebook-icon"
+            class="socials-block__icon socials-block__facebook-icon"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 320 512"
           >
@@ -63,10 +70,9 @@
             />
           </svg>
         </a>
-        <a href="#" class="socials-block__icon-container">
+        <a href="#" class="socials-block__link">
           <svg
-            class="socials-block__icon"
-            id="socials-block__twitter-icon"
+            class="socials-block__icon socials-block__twitter-icon"
             aria-hidden="true"
             focusable="false"
             data-prefix="fab"
@@ -80,10 +86,9 @@
             ></path>
           </svg>
         </a>
-        <a href="#" class="socials-block__icon-container">
+        <a href="#" class="socials-block__link">
           <svg
-            class="socials-block__icon"
-            id="socials-block__instagram-icon"
+            class="socials-block__icon socials-block__instagram-icon"
             aria-hidden="true"
             focusable="false"
             data-prefix="fab"
@@ -100,9 +105,10 @@
       </div>
       <!-- .socials-block -->
 
-      <p id="copyright-statement">
+      <p class="copyright-statement">
         &copy; Copyright Ping. All rights reserved.
       </p>
     </main>
+    <script src="js/index.js"></script>
   </body>
 </html>
